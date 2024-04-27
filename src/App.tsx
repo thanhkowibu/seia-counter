@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import pictureApi from "./api/modules/pictures.api";
+import { MainPage } from "./components/MainPage";
+import { SeiaGallery } from "./components/SeiaGallery";
 
 function App() {
   useEffect(() => {
@@ -12,7 +14,12 @@ function App() {
     };
     getPictures();
   }, []);
-  return <>Seia</>;
+  return (
+    <>
+      <MainPage />
+      <SeiaGallery />
+    </>
+  );
 }
 
 export default App;
