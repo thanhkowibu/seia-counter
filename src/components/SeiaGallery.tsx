@@ -62,7 +62,15 @@ export const SeiaGallery = () => {
 
   const handleScroll = () => {
     const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
-    if (!loading && scrollTop + clientHeight >= scrollHeight) {
+
+    const viewportWidth = window.innerWidth;
+
+    const isBottom =
+      viewportWidth < 1536
+        ? scrollTop + clientHeight >= scrollHeight - 1 // change scroll offset for mobile device
+        : scrollTop + clientHeight >= scrollHeight;
+
+    if (!loading && isBottom) {
       setPage((prevPage) => {
         if (prevPage < maxPage) {
           setLoading(true);
