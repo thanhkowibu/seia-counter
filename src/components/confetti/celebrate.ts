@@ -2,11 +2,11 @@ import confetti from "canvas-confetti";
 
 export const celebrate = () => {
   if (true) {
-    const duration = 2 * 1000;
+    const duration = 3 * 1000;
     const animationEnd = Date.now() + duration;
     const defaults = {
       startVelocity: 20,
-      spread: 720,
+      spread: 800,
       ticks: 100,
       zIndex: 50,
     };

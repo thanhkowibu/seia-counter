@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 export const CountdownItem = ({ num, text }: { num: string; text: string }) => {
   return (
-    <div className="font-sans w-1/3 h-28 md:h-36 flex flex-col gap-1 md:gap-2 items-center justify-center">
+    <div className="roboto-slab-400 w-1/3 h-28 md:h-36 flex flex-col gap-1 md:gap-2 items-center justify-center">
       <div className="w-full text-center relative overflow-hidden">
         <AnimatePresence mode="popLayout">
           <motion.span
@@ -19,7 +19,7 @@ export const CountdownItem = ({ num, text }: { num: string; text: string }) => {
           </motion.span>
         </AnimatePresence>
       </div>
-      <span className="text-xs md:text-sm lg:text-base font-semibold">
+      <span className="text-xs md:text-sm lg:text-base quicksand-400">
         {text}
       </span>
     </div>
