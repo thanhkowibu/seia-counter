@@ -22,12 +22,7 @@ export const MainPage = () => {
       <div className="h-[80svh] mt-16 flex flex-col items-center justify-center gap-12">
         <RoundAvt />
         <DayCount days={timegap.days + 1} />
-        <DigitalClock
-          days={timegap.days}
-          hours={timegap.hours}
-          minutes={timegap.minutes}
-          seconds={timegap.seconds}
-        />
+        <DigitalClock />
       </div>
     </div>
   );

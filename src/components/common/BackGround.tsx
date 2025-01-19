@@ -1,4 +1,4 @@
-import imageURL from "../../assets/bg.jpg";
+import imageURL from "../../assets/bg2.jpg";
 
 export const BackGround = () => {
   return (
